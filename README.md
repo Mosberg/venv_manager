@@ -11,17 +11,57 @@ This script provides a simple command-line interface for managing Python virtual
 
 ## Options
 
---system-site-packages: Include system site-packages in the virtual environment.
---symlinks: Use symlinks instead of copies (default on most platforms).
---copies: Use copies instead of symlinks (overrides default on most platforms).
---clear: Delete the contents of the environment directory if it already exists.
---upgrade: Upgrade the environment directory to use the current Python version.
---without-pip: Skip installing or upgrading pip in the environment.
---prompt PROMPT: Set the environment prompt prefix.
---upgrade-deps: Upgrade core dependencies (like pip) to the latest version on PyPI.
+````text
+--system-site-packages
+```
+: Include system site-packages in the virtual environment.
+
+
+```
+--symlinks
+```
+: Use symlinks instead of copies (default on most platforms).
+
+
+```
+--copies
+```
+: Use copies instead of symlinks (overrides default on most platforms).
+
+
+```
+--clear
+```
+: Delete the contents of the environment directory if it already exists.
+
+
+```
+--upgrade
+```
+: Upgrade the environment directory to use the current Python version.
+
+
+```
+--without-pip
+```
+: Skip installing or upgrading pip in the environment.
+
+
+```
+--prompt PROMPT
+```
+: Set the environment prompt prefix.
+
+
+```
+--upgrade-deps
+```
+: Upgrade core dependencies (like pip) to the latest version on PyPI.
+
 
 ## Usage
 
 ```bash
 python venv_manager.py [OPTIONS] ENV_DIR [ENV_DIR ...]
 ```
+````
